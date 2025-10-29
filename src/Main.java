@@ -76,7 +76,26 @@ public class Main {
         System.out.println(prvniCislo % druheCislo); // % = tzv. "modulo" = zbytek po celočíselném dělení
         */
 
+        // String metody
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.println("Zadej libovolný text:");
+        String mujText = mujScanner.nextLine();
 
+        System.out.print("Text je prázdný: ");
+        System.out.println(mujText.isEmpty());
+
+        System.out.print("Délka zadaného textu: ");
+        System.out.println(mujText.length());
+
+        System.out.println("Převod na velká písmena:");
+        System.out.println(mujText.toUpperCase());
+
+        System.out.print("Obsahuje písmeno e: ");
+        System.out.println(mujText.contains("e"));
+
+        System.out.print("První pozice písmene e: ");
+        int index = mujText.indexOf("e");
+        System.out.println(index+1); // index se začíná počítat od 0
 
 
     }
