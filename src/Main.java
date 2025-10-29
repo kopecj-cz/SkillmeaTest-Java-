@@ -109,19 +109,80 @@ public class Main {
         // Operátory
         /*
         int x = 10;
-        int y = 5;
+        int y = 20;
+        int z = 8;
 
         System.out.println(x == y);  // rovná se
         System.out.println(x != y);  // nerovná se
         System.out.println(x > y);  // větší než
         System.out.println(++x);  // přičte 1 k x a vypíše jej
-        //x++ prvně vypíše x a poté k němu přičte 1
+        // x++ prvně vypíše x a poté k němu přičte 1
         System.out.println(--y);  // odečte 1 od y a vypíše jej
-        //y-- prvně vypíše y a poté od něj odečte 1
+        // y-- prvně vypíše y a poté od něj odečte 1
+
+        System.out.println(x > y && z > x);  // logický AND
+        System.out.println(x > y || z > x);  // logický OR
+        System.out.println(!(x == 0));  // logický NOT = vrací opačný výsledek (při false vrací true)
         */
 
+        // Podmínky
+        /* podmínka if...else
+        // Tento proces rozhoduje o tom, zda je uživatel dospělý/senior/dospívající/dítě
+        Scanner mujScanner = new Scanner(System.in);
 
+        System.out.print("Zadej věk: ");
+        int vek = mujScanner.nextInt();
 
+        if(vek >= 18) {
+            System.out.println("Uživatel je dospělý");
+            if(vek >= 65) {
+                System.out.println("Uživatel je senior");
+            }
+        }
+        else if(vek >= 0) {
+            System.out.println("Uživatel je nezletilý");
+            if(vek > 15) {
+                System.out.println("Uživatel je dospívající");
+            }
+            else {
+                System.out.println("Uživatel je dítě");
+            }
+        }
+        else {
+            System.out.println("Věk nemůže být záporný!");
+        }
+        */
+
+        // Výpočet BMI
+        Scanner mujScanner = new Scanner(System.in);
+        float vyska;
+        float vaha;
+        float bmi;
+        System.out.print("Zadej výšku v cm: ");
+        vyska = mujScanner.nextFloat()/100;
+        System.out.print("Zadej váhu v kg: ");
+        vaha = mujScanner.nextFloat();
+
+        bmi = vaha / (vyska * vyska);
+
+        System.out.print("Vaše BMI je: ");
+        System.out.print(bmi);
+
+        if(bmi < 18.5) {
+            System.out.print(" (podváha)");
+        }
+        else if(bmi <= 25) {
+            System.out.print(" (normální hmotnost)");
+        }
+        else if(bmi <= 30) {
+            System.out.print(" (nadváha)");
+        }
+        else if(bmi <= 40) {
+            System.out.print(" (obezita)");
+        }
+        else {
+            System.out.print(" (morbidní obezita)");
+        }
 
     }
 }
