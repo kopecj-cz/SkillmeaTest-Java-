@@ -168,7 +168,10 @@ public class Main {
         System.out.print("Vaše BMI je: ");
         System.out.print(bmi);
 
-        if(bmi < 18.5f) {
+        if(bmi < 0) {
+            System.out.print(" (nelze zadat zápornou váhu)");
+        }
+        else if(bmi < 18.5f) {
             System.out.print(" (podváha)");
         }
         else if(bmi <= 25f) {
@@ -183,6 +186,10 @@ public class Main {
         else {
             System.out.print(" (morbidní obezita)");
         }
+
+
+
+
 
     }
 }
