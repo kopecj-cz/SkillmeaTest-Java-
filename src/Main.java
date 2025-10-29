@@ -77,6 +77,7 @@ public class Main {
         */
 
         // String metody
+        /*
         Scanner mujScanner = new Scanner(System.in);
         System.out.println("Zadej libovolný text:");
         String mujText = mujScanner.nextLine();
@@ -96,6 +97,30 @@ public class Main {
         System.out.print("První pozice písmene e: ");
         int index = mujText.indexOf("e");
         System.out.println(index+1); // index se začíná počítat od 0
+        */
+
+        // Parsování = převádění mezi typy
+        /*
+        String textCislo = "55";
+        int prevedeneCislo = Integer.parseInt(textCislo);
+        System.out.println(5 + prevedeneCislo);
+        */
+
+        // Operátory
+        /*
+        int x = 10;
+        int y = 5;
+
+        System.out.println(x == y);  // rovná se
+        System.out.println(x != y);  // nerovná se
+        System.out.println(x > y);  // větší než
+        System.out.println(++x);  // přičte 1 k x a vypíše jej
+        //x++ prvně vypíše x a poté k němu přičte 1
+        System.out.println(--y);  // odečte 1 od y a vypíše jej
+        //y-- prvně vypíše y a poté od něj odečte 1
+        */
+
+
 
 
     }
