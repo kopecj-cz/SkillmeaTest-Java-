@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 public class Main {
@@ -154,6 +155,7 @@ public class Main {
         */
 
         // Výpočet BMI
+        /*
         Scanner mujScanner = new Scanner(System.in);
         float vyska;
         float vaha;
@@ -186,8 +188,24 @@ public class Main {
         else {
             System.out.print(" (morbidní obezita)");
         }
+        */
 
+        // Hod kostkou - hra (sudá = prohra, lichá = výhra)
+        Scanner mujScanner = new Scanner(System.in);
+        Random kostka = new Random();
+        int hozeneCislo;
 
+        hozeneCislo = kostka.nextInt(1, 7);  //rozmezí je dáno >= origin AND < bound
+
+        System.out.print("Na kostce padlo: ");
+        System.out.println(hozeneCislo);
+
+        if(hozeneCislo % 2 == 0) {
+            System.out.println("Číslo je SUDÉ - VYHRÁVÁŠ");
+        }
+        else {
+            System.out.println("Číslo je LICHÉ - PROHRÁVÁŠ");
+        }
 
 
 
