@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -43,9 +45,36 @@ public class Main {
         System.out.print("Podíl: ");
         System.out.println(prvniDesCislo / druheDesCislo);
 
-        final float LUDOLFOVO_CISLO = 3.141592653f;  //konstanta = proměnná, která nejde poté již přepsat
+        final float LUDOLFOVO_CISLO = 3.141592653f;  // příklad konstanty = proměnná, která nejde poté již přepsat
         */
 
+        // Čtení dat zadaných uživatelem
+        /*
+        System.out.println("Ahoj, zadej jméno:");
+        Scanner mujScanner = new Scanner(System.in);
+        String jmeno = mujScanner.nextLine();
+        System.out.println("Přeji pěkný den " + jmeno);
+        */
+
+        // Interaktivní kalkulačka
+        /*
+        Scanner mujScanner = new Scanner(System.in);
+        System.out.print("Zadej první celé číslo: ");
+        int prvniCislo = mujScanner.nextInt();
+        System.out.print("Zadej druhé celé číslo: ");
+        int druheCislo = mujScanner.nextInt();
+
+        System.out.print("Součet: ");
+        System.out.println(prvniCislo + druheCislo);
+        System.out.print("Rozdíl: ");
+        System.out.println(prvniCislo - druheCislo);
+        System.out.print("Součin: ");
+        System.out.println(prvniCislo * druheCislo);
+        System.out.print("Podíl: ");
+        System.out.println(prvniCislo / druheCislo);
+        System.out.print("Modulo: ");
+        System.out.println(prvniCislo % druheCislo); // % = tzv. "modulo" = zbytek po celočíselném dělení
+        */
 
 
 
