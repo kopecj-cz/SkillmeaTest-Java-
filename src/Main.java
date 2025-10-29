@@ -168,16 +168,16 @@ public class Main {
         System.out.print("Vaše BMI je: ");
         System.out.print(bmi);
 
-        if(bmi < 18.5) {
+        if(bmi < 18.5f) {
             System.out.print(" (podváha)");
         }
-        else if(bmi <= 25) {
+        else if(bmi <= 25f) {
             System.out.print(" (normální hmotnost)");
         }
-        else if(bmi <= 30) {
+        else if(bmi <= 30f) {
             System.out.print(" (nadváha)");
         }
-        else if(bmi <= 40) {
+        else if(bmi <= 40f) {
             System.out.print(" (obezita)");
         }
         else {
