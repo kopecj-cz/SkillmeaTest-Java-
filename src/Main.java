@@ -391,8 +391,44 @@ public class Main {
         int tazenaKarta = 0;
         String uzivatelskyVstup;
 
+        do {
+            tazenaKarta = nahGen.nextInt(1,14);
+            System.out.println("Tažená karta je: " + tazenaKarta);
+            skoreHrace = skoreHrace + tazenaKarta;  // zkrácený zápis: skoreHrace += tazenaKarta
+            System.out.println("Vaše skóre je: " + skoreHrace);
 
+            if (skoreHrace > 21) {
+                System.out.println("Překročeno 21");
+                break;
+            }
 
+            System.out.println("Chcete další kartu? (a/n)");
+            uzivatelskyVstup = mujScanner.nextLine();
+
+            if (uzivatelskyVstup.equalsIgnoreCase("a")) {
+                continue;
+            }
+            else if (uzivatelskyVstup.equalsIgnoreCase("n")) {
+                    while (skoreKrupiera < skoreHrace) {
+                    tazenaKarta = nahGen.nextInt(1,14);
+                    skoreKrupiera = skoreKrupiera + tazenaKarta;
+                }
+                break;
+            }
+        }while (true);  // pořád TRUE - ze smyčky vyskakuji pomocí BREAK
+
+        System.out.println("Skóre hráče: " + skoreHrace);
+        System.out.println("Skóre krupiéra: " + skoreKrupiera);
+
+        if ((skoreHrace > skoreKrupiera && skoreHrace <= 21) || skoreKrupiera > 21) {
+            System.out.println("Vyhrál jste :)");
+        }
+        else if (skoreKrupiera == skoreHrace){
+            System.out.println("Remíza");
+        }
+        else {
+            System.out.println("Prohrál jste :(");
+        }
 
 
 
