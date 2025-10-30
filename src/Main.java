@@ -126,8 +126,8 @@ public class Main {
         System.out.println(!(x == 0));  // logický NOT = vrací opačný výsledek (při false vrací true)
         */
 
-        // Podmínky
-        /* podmínka if...else
+        // Podmínky - podmínka if...else
+        /*
         // Tento proces rozhoduje o tom, zda je uživatel dospělý/senior/dospívající/dítě
         Scanner mujScanner = new Scanner(System.in);
 
@@ -191,6 +191,7 @@ public class Main {
         */
 
         // Hod kostkou - hra (sudá = prohra, lichá = výhra)
+        /*
         Scanner mujScanner = new Scanner(System.in);
         Random kostka = new Random();
         int hozeneCislo;
@@ -206,6 +207,64 @@ public class Main {
         else {
             System.out.println("Číslo je LICHÉ - PROHRÁVÁŠ");
         }
+        */
+
+        // Podmínky - podmínka switch
+        /*
+        // Výběr dne
+        Scanner mujScanner = new Scanner(System.in);
+        int cisloDne;
+
+        System.out.print("Zadej číslo dne: ");
+        cisloDne = mujScanner.nextInt();
+
+        switch (cisloDne) {
+            case 1:
+                System.out.print("Je pondělí");
+                break;
+            case 2:
+                System.out.print("Je úterý");
+                break;
+            case 3:
+                System.out.print("Je středa");
+                break;
+            case 4:
+                System.out.print("Je čtvrtek");
+                break;
+            case 5:
+                System.out.print("Je pátek");
+                break;
+            case 6:
+                System.out.print("Je sobota");
+                break;
+            case 7:
+                System.out.print("Je neděle");
+                break;
+            default:
+                System.out.print("Neplatné číslo dne");
+        }
+
+        switch (cisloDne) {
+            case 1:
+            case 2:
+            case 3:
+            case 4:
+            case 5:
+                System.out.println(" - pracovní den");
+                break;
+            case 6:
+            case 7:
+                System.out.println(" - víkend");
+                break;
+            default:
+                System.out.println(" ");
+        }
+        */
+
+        /*
+        VYBLOKOVÁNO PRO DODĚLÁNÍ WEBINÁŘE č. 16 - 23.10.
+        */
+
 
 
 
