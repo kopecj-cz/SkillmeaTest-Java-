@@ -310,7 +310,7 @@ public class Main {
         */
 
         // Hod kostkou - vylepšení o smyčku
-
+        /*
         Scanner mujScanner = new Scanner(System.in);
         Random kostka = new Random();
         int hozeneCislo;
@@ -341,6 +341,63 @@ public class Main {
             }
 
         }while(ridiciPromenna);
+        */
+
+        // Hod kostkou - vícenásobné hody (moje vlastní idea)
+        /*
+        Scanner mujScanner = new Scanner(System.in);
+        Random kostka = new Random();
+        int hozeneCislo;
+        int pocetOpakovani;
+        int suda;
+        int licha;
+        int i;
+        boolean ridiciPromenna = true;
+        String konec = "";
+
+        System.out.print("Zadej, kolik hodů chceš provést: ");
+        pocetOpakovani = mujScanner.nextInt();
+
+        do {
+            for (i = 0; i == pocetOpakovani; i++)
+            hozeneCislo = kostka.nextInt(1, 7);  //rozmezí je dáno >= origin AND < bound
+
+            System.out.print("Na kostce padlo: ");
+            System.out.println(hozeneCislo);
+
+            if(hozeneCislo % 2 == 0) {
+                System.out.println("Číslo je SUDÉ - PROHRÁVÁŠ");
+            }
+            else {
+                System.out.println("Číslo je LICHÉ - VYHRÁVÁŠ");
+            }
+
+            System.out.println("Pro ukončení hry zadej písmeno q");
+            konec =  mujScanner.nextLine();
+
+            if (konec.equals("q")) {
+                ridiciPromenna = false;
+            }
+
+        }while(ridiciPromenna);
+        */
+
+        // Blackjack
+        Random nahGen = new Random();
+        Scanner mujScanner = new Scanner(System.in);
+
+        int skoreHrace = 0;
+        int skoreKrupiera = 0;
+        int tazenaKarta = 0;
+        String uzivatelskyVstup;
+
+
+
+
+
+
+
+
 
 
 
