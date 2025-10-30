@@ -265,6 +265,40 @@ public class Main {
         VYBLOKOVÁNO PRO DODĚLÁNÍ WEBINÁŘE č. 16 - 23.10.
         */
 
+        // Smyčky - opakování kódu
+        /*
+        int[] nasobky = new int[10];
+
+        // naplnění pole násobky 10
+        for (int i = 0; i < nasobky.length; i++) {
+            nasobky[i] = 10 * i;
+        }
+
+        // výpis pole násobků
+        for (int jedenNasobek: nasobky){
+            System.out.println(jedenNasobek);
+        }
+        */
+
+        // smyčka WHILE
+        /*
+        int ridiciPromenna = 0;
+
+        while(ridiciPromenna != 0){
+            System.out.println(ridiciPromenna);
+            ridiciPromenna++;
+        }
+
+        do{
+            System.out.println(ridiciPromenna);
+            //ridiciPromenna++;
+        }while(ridiciPromenna != 0);
+        */
+
+
+
+
+
 
 
 
