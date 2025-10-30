@@ -192,7 +192,6 @@ public class Main {
 
         // Hod kostkou - hra (sudá = prohra, lichá = výhra)
         /*
-        Scanner mujScanner = new Scanner(System.in);
         Random kostka = new Random();
         int hozeneCislo;
 
@@ -202,10 +201,10 @@ public class Main {
         System.out.println(hozeneCislo);
 
         if(hozeneCislo % 2 == 0) {
-            System.out.println("Číslo je SUDÉ - VYHRÁVÁŠ");
+            System.out.println("Číslo je SUDÉ - PROHRÁVÁŠ");
         }
         else {
-            System.out.println("Číslo je LICHÉ - PROHRÁVÁŠ");
+            System.out.println("Číslo je LICHÉ - VYHRÁVÁŠ");
         }
         */
 
@@ -295,9 +294,53 @@ public class Main {
         }while(ridiciPromenna != 0);
         */
 
+        // break = ukončení smyčky; continue = ukončení iterace a pokračování dále
+        /*
+        int ridiciPromenna = 0;
 
+        while (true) {
+            System.out.println(ridiciPromenna);
 
+            if (ridiciPromenna > 5){
+                continue;  // break / continue
+            }
 
+            ridiciPromenna++;
+        }
+        */
+
+        // Hod kostkou - vylepšení o smyčku
+
+        Scanner mujScanner = new Scanner(System.in);
+        Random kostka = new Random();
+        int hozeneCislo;
+        boolean ridiciPromenna = true;
+        String konec = "";
+
+        System.out.println("Pro hod kostkou stiskni Enter");
+        mujScanner.nextLine();
+
+        do {
+            hozeneCislo = kostka.nextInt(1, 7);  //rozmezí je dáno >= origin AND < bound
+
+            System.out.print("Na kostce padlo: ");
+            System.out.println(hozeneCislo);
+
+            if(hozeneCislo % 2 == 0) {
+                System.out.println("Číslo je SUDÉ - PROHRÁVÁŠ");
+            }
+            else {
+                System.out.println("Číslo je LICHÉ - VYHRÁVÁŠ");
+            }
+
+            System.out.println("Pro ukončení hry zadej písmeno q");
+            konec =  mujScanner.nextLine();
+
+            if (konec.equals("q")) {
+                ridiciPromenna = false;
+            }
+
+        }while(ridiciPromenna);
 
 
 
